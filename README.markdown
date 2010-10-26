@@ -1,0 +1,56 @@
+<img src="http://github.com/redlego/scraper/raw/master/redlego.png" />
+
+What is RedLego?
+----------------
+
+It's been very difficult to compare the price of Adobe software
+from territory to territory in a meaningful way. So here's RedLego, a
+Python script that visits all the online stores, checks the prices,
+converts them to $US at the current exchange rate and puts them all in
+a handy json file for you to access.
+
+There are two repositories: JSON price data and the scraper.
+
+### Data visualisation ###
+Compare Adobe's prices around the world with this data visualisation by [@premasagar](http://twitter.com/premasagar):
+
+**[http://dharmafly.com/redlego/](http://dharmafly.com/redlego)**
+
+
+### JSON Price Data ###
+
+**[http://github.com/redlego/data/](http://github.com/redlego/data/)**
+
+You can access the raw JSON file at:
+
+[http://github.com/redlego/data/raw/master/prices.json](http://github.com/redlego/data/raw/master/prices.json)
+
+### Scraper ###
+
+**[http://github.com/redlego/scraper/](http://github.com/redlego/scraper/)**
+
+To install the scraper you will need:
+
+* [pip](http://pypi.python.org/pypi/pip)
+* [virtualenv](http://pypi.python.org/pypi/virtualenv)
+* [virtualenvwrapper](http://pypi.python.org/pypi/virtualenvwrapper)
+* An API key from [Exchange Rate API](http://exchangerate-api.com/api-key) (free).
+
+To install:
+
+    git clone http://github.com/redlego/scraper.git
+    cd scraper
+    mkvirtualenv scraper
+    pip install -E scraper -r requirements.txt
+
+Put your [Exchange Rate API key](http://exchangerate-api.com/api-key) in a file called `currency_api_key`.
+
+Run `python redlego.py`
+
+### Discussion ###
+
+You can find a long-running discussion of Adobe's international pricing here: [Why are UK prices nearly double US prices?](http://getsatisfaction.com/adobe/topics/why_are_uk_prices_nearly_double_us_prices).
+
+### Licence ###
+
+[opensource.org/licenses/mit-license.php](http://opensource.org/licenses/mit-license.php)
